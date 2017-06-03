@@ -4,8 +4,13 @@
   "description": "A set of tools for working with color & color palettes.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fetch-color-lovers": "nice-color-palettes 100 --pretty > _compile/colour-lovers-top-100.json && nice-color-palettes 200 --pretty > _compile/colour-lovers-top-200.json && nice-color-palettes 300 --pretty > _compile/colour-lovers-top-300.json"
   },
   "author": "Jamie Owen <hello@jamieowen.com> (=)",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "budo": "^10.0.3",
+    "nice-color-palettes": "^1.0.1"
+  }
 }
