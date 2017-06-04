@@ -17,18 +17,29 @@ color wheel colours ( so 12 colours or whatever )
 color lovers - https://github.com/Jam3/nice-color-palettes
 data viz colours...
 
-## Other deps.
-Color Scheme js
-https://github.com/c0bra/color-scheme-js
-
+## Potential Deps.
+Color Scheme js  << Probs use this for ColorScheme generation >>
+https://github.com/c0bra/color-scheme-js  
 Seems good for generating palettes from the colour wheel using various colour theory methods ( i.e. analous, split complementary, etc )
-Like : http://paletton.com/
+Like : http://paletton.com
+
+But this one has a Color class model with adjustment props and palette generation.
+Don't like the api method names as much the one below.
+https://github.com/brehaut/color-js
+
+<< and probably generate color theory palettes myself - theory is easy to implement >>
+This has a nice Color class with good api.  << Probs use this for Color model >>
+https://github.com/qix-/color
 
 Color Difference and Mapping using correct lab space conversion.
 https://github.com/markusn/color-diff/
 
 Could use this but probably the above.
 https://github.com/dtao/nearest-color
+
+This color space looks interesting.
+http://www.hsluv.org/
+
 
 
 
@@ -55,7 +66,32 @@ http://polycount.com/discussion/50725/color-and-specular-maps
 4. Three.js - What about just testing converting a vertex colour to lab, allow lighting calculations to be carried out,
 then back to rgb.
 
-PaletteGenerator.
+Composer
+Ways to determine foreground/background predominate colours in palettes and categorise.
+Eg. in video on BlendGurus talks about how with the complementary color palettes one
+predominiant colour should be used more frequently.  Usually the more weaker color of the palette.
+https://www.youtube.com/watch?v=Qj1FK8n7WgY
+
+
+
+Ideas with playing with schemes applied to lighting material properties ( emissive, specular, etc ) as well as the colors on the lights themselves. Also what abouy playing with object colors based on distance to camera..
+
+https://www.youtube.com/watch?v=GOp02tHtCv4&t=183s
+3 mins in - white light and green light mixing in shadows to create the complementary.
+
+Tetric scheme( double complementary ) -- foreground / background pairs.
+
+We could categories things with various combinations of luma/chroma/saturation for example.
+
+RYB Traditinoal Colour Wheel
+http://www.daveeddy.com/2014/07/01/red-yellow-and-blue/
+https://github.com/bahamas10/ryb
+
+May be exploring color theory rules on different color spaces.
+And also, looking at applying color theory on the GPU and playing around with
+Materials or Lights that interact using complementary colors or something.
+I think rotating and shifting the relationship between mixing two complementary colors based on lights in a scene would look pretty cool.
+
 
 
 ## Explorer
