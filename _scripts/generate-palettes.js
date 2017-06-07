@@ -11,6 +11,21 @@ var pantone = require( '../_data/pantone-colors' );
 
 // Create color wheel colors
 var colorWheel = [];
+var colorWheelNames = [
+    'red',
+    'orange',
+    'yellow',
+    'chartreuse green',
+    'green',
+    'spring green',
+    'cyan',
+    'azure',
+    'blue',
+    'violet',
+    'magenta',
+    'rose'
+];
+
 var deg = 30;
 var c;
 for( var i = 0; i<360; i+=deg ){
@@ -34,11 +49,14 @@ var fileData = {
     './palettes/pantone/names.json': pantone.names.map( function( name ){
         return name;
     }),
-    './palettes/color-wheel/rgb.json': colorWheel.map( function(c){
-        return c.rgb().array();
+    './palettes/color-wheel/rgb.json': colorWheel.map( function( color ){
+        return color.rgb().array();
     }),
-    './palettes/color-wheel/hex.json': colorWheel.map( function(c){
-        return c.hex();
+    './palettes/color-wheel/hex.json': colorWheel.map( function( color ){
+        return color.hex();
+    }),
+    './palettes/color-wheel/names.json': colorWheelNames.map( function( value ){
+        return value;
     })
 
 }

@@ -92,6 +92,8 @@ And also, looking at applying color theory on the GPU and playing around with
 Materials or Lights that interact using complementary colors or something.
 I think rotating and shifting the relationship between mixing two complementary colors based on lights in a scene would look pretty cool.
 
+Good for colour names :
+http://www.procato.com/color+wheel
 
 
 ## Explorer
